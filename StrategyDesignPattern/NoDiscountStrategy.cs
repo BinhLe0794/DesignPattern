@@ -1,12 +1,8 @@
-﻿using System;
-namespace StrategyDesignPattern
+﻿namespace StrategyDesignPattern;
+public class NoDiscountStrategy : IPromoteStrategy
 {
-    public class NoDiscountStrategy : IPromoteStrategy
-    {
-        public double DoDiscount(double price)
-        {
-            return price;
-        }
-    }
+   public double DoDiscount(double price)
+   {
+      return price;
+   }
 }
-

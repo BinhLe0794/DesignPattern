@@ -1,14 +1,10 @@
-﻿using System;
-using DecoratorDesignPattern.Base;
+﻿using DecoratorDesignPattern.Base;
 
-namespace DecoratorDesignPattern
+namespace DecoratorDesignPattern;
+public class MilkTea : IMilkTea
 {
-    public class MilkTea : IMilkTea
-    {
-        public double Cost()
-        {
-            return 5d;
-        }
-    }
+   public double Cost()
+   {
+      return 5d;
+   }
 }
-

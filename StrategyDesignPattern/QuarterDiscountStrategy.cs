@@ -1,14 +1,8 @@
-﻿using System;
-namespace StrategyDesignPattern
+﻿namespace StrategyDesignPattern;
+public class QuarterDiscountStrategy : IPromoteStrategy
 {
-    public class QuarterDiscountStrategy : IPromoteStrategy
-    {
-
-
-        public double DoDiscount(double price)
-        {
-            return price * 0.75;
-        }
-    }
+   public double DoDiscount(double price)
+   {
+      return price * 0.75;
+   }
 }
-

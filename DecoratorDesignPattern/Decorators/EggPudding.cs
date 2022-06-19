@@ -1,18 +1,13 @@
-﻿using System;
-using DecoratorDesignPattern.Base;
+﻿using DecoratorDesignPattern.Base;
 
-namespace DecoratorDesignPattern.Decorators
+namespace DecoratorDesignPattern.Decorators;
+public class EggPudding : MilkTeaDecorator
 {
-    public class EggPudding : MilkTeaDecorator
-    {
-        public EggPudding(IMilkTea innermilkTea) : base(innermilkTea)
-        {
-        }
-
-        public override double Cost()
-        {
-            return 3d + base.Cost();
-        }
-    }
+   public EggPudding(IMilkTea innermilkTea) : base(innermilkTea)
+   {
+   }
+   public override double Cost()
+   {
+      return 3d + base.Cost();
+   }
 }
-

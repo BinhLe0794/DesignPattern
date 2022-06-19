@@ -1,9 +1,5 @@
-﻿using System;
-namespace StrategyDesignPattern
+﻿namespace StrategyDesignPattern;
+public interface IPromoteStrategy
 {
-    public interface IPromoteStrategy
-    {
-        double DoDiscount(double price);
-    }
+   double DoDiscount(double price);
 }
-

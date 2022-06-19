@@ -1,9 +1,5 @@
-﻿using System;
-namespace DecoratorDesignPattern.Base
+﻿namespace DecoratorDesignPattern.Base;
+public interface IMilkTea
 {
-    public interface IMilkTea
-    {
-        public double Cost();
-    }
+   public double Cost();
 }
-
