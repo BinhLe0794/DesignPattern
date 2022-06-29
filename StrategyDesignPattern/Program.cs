@@ -1,5 +1,7 @@
 ﻿using StrategyDesignPattern;
-
+/*
+ 
+ */
 Console.WriteLine("Start Running the Program");
 var random = new Random();
 for(var i = 0; i < 5; i++)
