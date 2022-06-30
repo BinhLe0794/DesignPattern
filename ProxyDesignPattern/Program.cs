@@ -7,6 +7,6 @@ CoreProxy coreProxy = new CoreProxy(true);
 
 Console.WriteLine(coreProxy.GetName());
 
-coreProxy.SetName("Admin Core 1 ");
+//coreProxy.SetName("Admin Core 1 ");
 
 Console.WriteLine(coreProxy.GetName());

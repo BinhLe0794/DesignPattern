@@ -9,9 +9,23 @@ namespace FactoryDesignPattern.Factory
 {
     internal class RandomAnimalFactory : IAnimalFactory
     {
+        public int Index { get; set; }
         public IAnimal CreateAnimal()
         {
-            throw new NotImplementedException();
+            var random = new Random();
+            Index = random.Next(0, 2);
+            if (Index == 0)
+            {
+                return new Dog();
+            }
+            else if (Index == 1)
+            {
+                return new Cat();
+            }
+            else
+            {
+                return new Duck();
+            }
         }
     }
 }

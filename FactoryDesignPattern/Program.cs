@@ -17,19 +17,22 @@ namespace FactoryDesignPattern
             IAnimalFactory factory;
 
             Random random = new();
-
-            int type = random.Next(0,2);
-
-            if (type == 0)
+            for (int i = 0; i < 5; i++)
             {
-                factory = new BasicAnimalFactory();
+                int type = random.Next(0, 2);
+
+                if (type == 0)
+                {
+                    factory = new BasicAnimalFactory();
+                }
+                else
+                {
+                    factory = new RandomAnimalFactory();
+                }
+                var animal = factory.CreateAnimal();
+                Console.WriteLine(animal.GetName());
             }
-            else
-            {
-                factory = new RandomAnimalFactory();
-            }
-            var animal = factory.CreateAnimal();
-            Console.WriteLine(animal.ToString());
+
             Console.ReadLine();
         }
     }
