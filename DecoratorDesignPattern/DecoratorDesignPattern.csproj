@@ -11,8 +11,4 @@
         <None Remove="Base\" />
         <None Remove="Decorators\" />
     </ItemGroup>
-    <ItemGroup>
-        <Folder Include="Base\" />
-        <Folder Include="Decorators\" />
-    </ItemGroup>
 </Project>

@@ -1,6 +1,6 @@
-﻿using DecoratorDesignPattern.Base;
+﻿using DecoratorDesignPattern.MilkTea.Base;
 
-namespace DecoratorDesignPattern.Decorators;
+namespace DecoratorDesignPattern.MilkTea.Decorators;
 public class Bubble : MilkTeaDecorator
 {
    public Bubble(IMilkTea innermilkTea) : base(innermilkTea)

@@ -1,4 +1,4 @@
-﻿namespace DecoratorDesignPattern.Base;
+﻿namespace DecoratorDesignPattern.MilkTea.Base;
 public abstract class MilkTeaDecorator : IMilkTea
 {
    private readonly IMilkTea _milkTea;
